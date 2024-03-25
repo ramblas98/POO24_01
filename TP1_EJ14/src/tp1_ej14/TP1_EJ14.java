@@ -45,6 +45,7 @@ public class TP1_EJ14 {
             
             if(distancia < distanciaMinima || (distancia == distanciaMinima && i< posicionGanador)){
                 distanciaMinima = distancia;
+                
                 posicionGanador = i+1;
                 
                 
