@@ -27,7 +27,19 @@ public class TP1_EJ14 {
                 respuestas[j] = teclado.nextInt();
             }
              int distanciaMinima = Integer.MAX_VALUE;
-             int distancia = -1;
+             int posicionGanador = -1;
+             for(int j=0;j<cantest;j++){
+                 int distancia = Math.abs(respuestas[j]-numsec);
+                 if(distancia == 0){
+                     posicionGanador = j+1;
+                     break;
+                 }
+                 if(distancia<distanciaMinima){
+                     distanciaMinima = distancia;
+                     posicionGanador = j+1;
+                 }
+             }
+             System.out.println(posicionGanador);
         }      
     }
 }
