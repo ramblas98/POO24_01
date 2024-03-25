@@ -17,18 +17,17 @@ public class TP1_EJ14 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        int n,i,j,cantest,numsec;
-        int v[];
         
-        
-        n = teclado.nextInt();
-        for(i=0;i<n;i++){
-            cantest = teclado.nextInt();
-            numsec = teclado.nextInt();
-            v = new int[cantest];
-            for(j=0;j<cantest;j++){
-                v[j] = teclado.nextInt();
+        int n = teclado.nextInt();
+        for(int i=0;i<n;i++){
+            int cantest = teclado.nextInt();
+            int numsec = teclado.nextInt();
+            int[] respuestas = new int[cantest];
+            for(int j=0;j<cantest;j++){
+                respuestas[j] = teclado.nextInt();
             }
-        }
+             int distanciaMinima = Integer.MAX_VALUE;
+             int distancia = -1;
+        }      
     }
 }
