@@ -47,6 +47,8 @@ public class TP1_EJ14 {
                 distanciaMinima = distancia;
                 posicionGanador = i+1;
                 
+                
+                
             }
         }
          return posicionGanador;       
