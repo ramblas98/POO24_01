@@ -15,9 +15,9 @@ public class TP1_EJ14 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         Scanner teclado = new Scanner(System.in);
-        int N, numeros[], S, QT, i, k, p, menor, pos, diferencias[];
+        int N, numeros[], S, QT, i, k, p, menor, pos, diferencias[], dif;
         
         N = teclado.nextInt();
         numeros = new int[10];
@@ -40,7 +40,8 @@ public class TP1_EJ14 {
             System.out.println();
             diferencias = new int[QT];
             for(p = 0; p < QT; p++){
-                diferencias[p] = Math.abs(S - numeros[p]);
+                dif = S - numeros[p];
+                diferencias[p] = Math.abs(dif);
             }
             menor = diferencias[0];
             pos = 0;
