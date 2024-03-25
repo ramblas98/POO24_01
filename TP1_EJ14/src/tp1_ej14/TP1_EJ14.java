@@ -6,7 +6,7 @@ package tp1_ej14;
 
 /**
  *
- * @author profeblas
+ * @author blaslopez@gmail.com
  */
 public class TP1_EJ14 {
 
@@ -14,7 +14,8 @@ public class TP1_EJ14 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Ejercicio de Programacion Competitiva
+        
     }
     
 }
