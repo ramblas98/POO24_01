@@ -16,7 +16,7 @@ public class TP1_EJ14 {
      */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int n,QT,S,i=0,j=0,band,menor,pos;
+        int n,QT,S,i=0,j,band,menor,pos;
         int v[];
         int aux[];
         int ganador[];
@@ -28,8 +28,12 @@ public class TP1_EJ14 {
             S = teclado.nextInt();
             v = new int[QT];
             aux = new int[QT];
-            while(j<QT && band==0){
+            for(j=0;j<QT;j++){
                 v[j] = teclado.nextInt();
+            }  
+           
+            j=0;
+            while(j<QT && band==0){   
                 if(v[j]==S){
                   ganador[i]=j+1;
                   band = 1;
