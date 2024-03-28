@@ -6,35 +6,26 @@ package tp1_ej14;
 
 import java.util.Scanner;
 
-/**
- *
- * @author profeblas
- */
 public class TP1_EJ14 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner leer = new Scanner(System.in);
-        int aux=-1, i, numProf, n, n2;
-        int dist, pos;
-        dist = pos = -1;
-        int v[];
+    public static void main(String[] args) {        
+        Scanner leer = new Scanner(System.in);        
+        int aux, i, numProf, n, n2;
+        int dist, pos = 0;       
+        int[] v;
+        
         v = new int[10];
         n = leer.nextInt();
+        
         while(n>0){
             n2 = leer.nextInt();
             numProf = leer.nextInt();
             
+            aux=9999;
             for(i=0; i<n2; i++){
                 v[i] = leer.nextInt();
                 dist = Math.abs(numProf-v[i]); 
-                if(i == 0){
-                    pos = i+1;
-                    aux = dist;
-                }else if(dist<aux){
+                
+                if(dist<aux){
                     pos = i+1;
                     aux = dist;
                 }
